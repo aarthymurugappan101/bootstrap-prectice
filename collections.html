@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>collections</title>
+
+    <!--favicion-->
+    <link rel="short icon" href="img/f_logo.jpg"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .jumbotron{
+            background-image: url('img/imageimage1.jpg');
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--navigation-->
+    <div class="container-fluid">
+        
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="index,html">
+                    <img src="img/logo02.jpg" alt="logo">
+                </a>
+    
+                <!--toggler button-->
+                <button class="navbar-toggler navbar-light"
+                        data-toggle="collapse"
+                        data-target="#collapsiblenavbar">
+    
+                        <span class="navbar-toggler-icon"></span>
+    
+                    </button>
+                <div id="collapsiblenavbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"> Home</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+    
+                        <a href="collections.html" 
+                        class="nav-link dropdown-toggle" 
+                        data-toggle="dropdown"> 
+                        Collections
+                        </a>
+                    <!--submenu-->
+                    <ul class="dropdown-menu">
+                        <li><a href="collections.html" class="dropdown-item">Armchairs</a></li>
+                        <li><a href="collections.html" class="dropdown-item">Couches</a></li>
+                        <li><a href="collections.html" class="dropdown-item">Tables</a></li>
+                    </ul>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="contacts_us.html" class="nav-link"> Contact Us</a>
+                    </li>
+                </ul>
+    
+                <form class="form-inline ml-auto" action="#">
+                        <input class="form-control mr-3" type="text">
+                        <button class="btn btn-outline-line" type="submit">search</button>
+            
+                </form>
+                </div>
+            </nav>
+    </div>
+    <!--main content-->
+    <div class="container-fluid">
+        <div class="jumbotron bg-info">
+            <h1 class="text-center">Armchairs</h1>
+        </div>
+    </div>
+    <!-- cards -->
+    <div class="row">
+        <!-- column 1 -->
+        <div class="col-md-3">
+            <!-- price card -->
+            <div class="card">
+                <h5 class="card-reader">Price Range</h5>
+                <div class="card-body">
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="radioprice" 
+                        id="priceAll" class="custom-control-input">
+                        <label class="custom-control-label" for="priceAll">All</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="radioprice"
+                        id="price500to1000" class="custom-control-input">
+                        <label class="custom-control-label" for="price500to1000">500 to 1000</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="radioprice"
+                        id="price100to500" class="custom-control-input">
+                        <label class="custom-control-label" for="price100to500">100 to 500</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="radioprice"
+                        id="price10to100" class="custom-control-input">
+                        <label class="custom-control-label" for="price10to100">10 to 100</label>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+            <!-- details card -->
+            <div class="card">
+                <h5 class="card-header"> about our Armchairs</h5>
+                <div class="card-body">
+                    <h6 class="card-title">quality</h6>
+                    <p class="card-text">very good</p>
+                    <hr>
+                    <h6 class="card-header">waranty</h6>
+                    <p class="card-text">hefelfl</p>
+                </div>
+
+            </div>
+        <!-- column 2 -->
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4"><img src="img/product/row_ac001_0.jpg">
+                    <h4>AC001</h4>
+                    <P>Product Description</P>
+                    <a href="productdetail.html" class="btn btn-primary"> view detail</a>
+                </div>
+                <div class="col-md-4"><img src="img/product/row_ac001_1.jpg">
+                    <h4>AC001</h4>
+                    <P>Product Description</P>
+                    <a href="productdetail.html" class="btn btn-primary"> view detail</a>
+                </div>
+                <div class="col-md-4"><img src="img/product/row_ac001_2.jpg">
+                    <h4>AC001</h4>
+                    <P>Product Description</P>
+                    <a href="productdetail.html" class="btn btn-primary">view detail</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">item1</div>
+                <div class="col-md-4">item2</div>
+                <div class="col-md-4">item3</div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

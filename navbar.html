@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>navbar</title>
+    <!--links to bootstrap javascript and css files-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!---lg:large-->
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <ul class="navbar-nav">
+            <li class="navitem"><a href="#" class="navlink">link 1</a></li>
+            <li class="navitem"><a href="#" class="navlink">link 2</a></li>
+            <li class="navitem"><a href="#" class="navlink">link 3</a></li>
+        </ul>
+    </nav>
+    <br>
+    <!---md:medium-->
+    <nav class="navbar navbar-expand-md bg-success">
+        <ul class="navbar-nav">
+            <li class="navitem"><a href="#" class="navlink">link 1</a></li>
+            <li class="navitem"><a href="#" class="navlink">link 2</a></li>
+            <li class="navitem"><a href="#" class="navlink">link 3</a></li>
+        </ul>
+    </nav>
+    <br>
+    <!---sm:small-->
+    <nav class="navbar navbar-expand-sm bg-secondary">
+        <ul class="navbar-nav">
+            <li class="navitem"><a href="#" class="navlink">link 1</a></li>
+            <li class="navitem"><a href="#" class="navlink">link 2</a></li>
+            <li class="navitem"><a href="#" class="navlink">link 3</a></li>
+        </ul>
+    </nav>
+    <br>
+    <!---menu with dropdown list-->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <!--brand logo-->
+        <a class="navbar-brand" href="#">
+            <img src="../img/f_logo.jpg" alt="logo" style="width: 40px">
+        </a>
+        <!--toggle button-->
+        <button class="navbar-toggler" 
+                data-toggle="collapse" 
+                data-target="#collapsibleNavbar">
+                
+            <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="navitem"><a href="#" class="navlink">link 1</a></li>
+                <li class="navitem"><a href="#" class="navlink">link 2</a></li>
+
+                <li class="navitem-dropdown">
+                    <a href="#" class="navlink dropdown-toggle" data-toggle="dropdown">link 3</a>
+
+                    <div class="dropdown-menu">
+                        <a href="dropdown-item" href="#">link 3.1</a>
+                        <a href="dropdown-item" href="#">link 3.2</a>
+                        <a href="dropdown-item" href="#">link 3.3</a>
+                </li>
+            </ul>
+            <!---search button-->
+            <form class="form-inline ml-auto" action="#">
+                    <input class="form-control" type="text">
+                    <button class="btn btn-outline-line" type="submit">search</button>
+        
+                </form>
+        </div>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            border: blue 4px inset;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        th{
+            border: blue 2px solid;
+            padding: 5px;
+            background-color: yellowgreen;
+        }
+        td{
+            border:blue 2px solid;
+            padding: 5px;
+        }
+        td.row{
+          width: 50%;
+        }
+        col.col1{
+            background-color: blueviolet;
+        }
+        col.col2-3{
+            background-color: peru;
+        }
+        col.col4-6{
+            background-color: seagreen;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <table >
+        <colgroup>
+            <col class="col1">
+            <col class="col2-3" span="2">
+            <col class="col4-6" span="3">
+        
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="6">header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col1" rowspan="5">50% of the table</td>
+                <td class="col2-3"colspan="2">a</td>
+                <td class="col4-6"colspan="3">b</td>
+                
+            </tr>
+            <tr>>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+             </tr>    
+
+        </tbody>
+
+    </table>
+</body>
+</html>
